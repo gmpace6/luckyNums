@@ -1,9 +1,9 @@
 
 function luckyNumbers(n){
     let result = []
-    for(let i = 0; i < n; i++){
-Math.floor(Math.random() * 10 + 1)
+    for(let i = n; i > 0; i--){
+result.push(Math.floor(Math.random() * 10 + 1))
     }
-    result.push(i)
+    return result
 }
 console.log(luckyNumbers(10))
